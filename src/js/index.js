@@ -99,6 +99,8 @@ elements.searchResPages.addEventListener('click', e => {
 
             // Render recipe
             clearLoader();
+            listView.clearList();
+            
             recipeView.renderRecipe(
                 state.recipe,
                 state.likes.isLiked(id)
